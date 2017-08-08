@@ -1,0 +1,10 @@
+<h1>Création d'une nouvelle task</h1>
+<h3>Veuillez entrer un nom et une description à votre task</h3>
+
+<%= form_for(@task) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <%= f.submit %>
+<% end %>
